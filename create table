@@ -1,0 +1,95 @@
+
+create table Professor (
+	pro_id int primary key NOT NULL,
+	pro_name varchar NOT NULL,
+	pro_gender varchar NOT NULL,
+	office varchar NOT NULL
+);
+
+create table Disciplines (
+	disc_id int primary key NOT NULL,
+	disc_name varchar(20) NOT NULL,
+	num_credits int NOT NULL,
+
+	professor int NOT NULL,
+	constraint fk_professor
+	foreign key (professor) references Professor (pro_id)
+);
+
+create table Bach_Programs(
+	bach_id int primary key NOT NULL,
+	bach_code varchar NOT NULL,
+	bach_name varchar NOT NULL,
+	
+	main_disc_1 int NOT NULL,
+	constraint fk_main_disc_1
+	foreign key (main_disc_1) references Disciplines (disc_id),
+	
+	main_disc_2 int NOT NULL,
+	constraint fk_main_disc_2
+	foreign key (main_disc_2) references Disciplines (disc_id),
+	
+	main_disc_3 int NOT NULL,
+	constraint fk_main_disc_3 
+	foreign key (main_disc_3 ) references Disciplines (disc_id),
+	
+	main_disc_4 int NOT NULL,
+	constraint fk_main_disc_4 
+	foreign key (main_disc_4) references Disciplines (disc_id)
+);
+
+create table Fee (
+	receipt_No int primary key,
+	total_sum int,
+	date_ date
+);
+
+
+create table Student (
+	st_id int primary key NOT NULL,
+	f_name varchar (12) NOT NULL,
+	l_name varchar (20) NOT NULL,
+	gender varchar (10) NOT NULL,
+	address varchar NOT NULL,
+	tel_num int NOT NULL,
+	email varchar NOT NULL,
+	admission_year date NOT NULL,
+	
+	bachelor int NOT NULL,
+	constraint fk_bachelor
+	foreign key (bachelor) references Bach_Programs (bach_id),
+
+	GPA decimal NOT NULL,
+	
+	scolarship int,
+	
+	fee int,
+	constraint fk_fee
+	foreign key (fee) references Fee (receipt_No)
+);
+
+create table Moodle_st (
+	mdl_st_id int primary key NOT NULL,
+	st_name varchar NOT NULL,
+
+	st_id int NOT NULL,
+	constraint fk_st_id
+	foreign key (st_id) references Student(st_id),
+
+	st_login varchar UNIQUE NOT NULL,
+	st_password varchar NOT NULL,
+	st_created_at date	
+);
+
+create table Moodle_t (
+	mdl_t_id int primary key NOT NULL,
+	pro_name varchar NOT NULL,
+
+	pro_id int NOT NULL,
+	constraint fk_pto_id
+	foreign key (pro_id) references Professor(pro_id),
+
+	pro_login varchar NOT NULL UNIQUE,
+	pro_password varchar NOT NULL,
+	pro_created_at date	
+);
