@@ -1,6 +1,6 @@
 # Student-DBMS
 Student DBMS in SQL Programming Language for unveristy administration 
-This is my first project in SQL Langueage that i will improve further.To be more precise, implement into any application of website.
+This is my first project in SQL Language that I will improve further.To be more precise, implement into any application or website.
 
 Here are the business rules:
 
