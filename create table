@@ -16,6 +16,7 @@ create table Disciplines (
 	foreign key (professor) references Professor (pro_id)
 );
 
+
 create table Bach_Programs(
 	bach_id int primary key NOT NULL,
 	bach_code varchar NOT NULL,
@@ -38,6 +39,15 @@ create table Bach_Programs(
 	foreign key (main_disc_4) references Disciplines (disc_id)
 );
 
+
+create table advisor (
+	adv_id int primary key,
+	adv_name varchar,
+	bachelor int,
+	constraint fk_bachelor
+	foreign key (bachelor) references bach_programs (bach_id)
+);
+
 create table Fee (
 	receipt_No int primary key,
 	total_sum int,
@@ -51,9 +61,9 @@ create table Student (
 	l_name varchar (20) NOT NULL,
 	gender varchar (10) NOT NULL,
 	address varchar NOT NULL,
-	tel_num int NOT NULL,
+	tel_num varchar (15) NOT NULL,
 	email varchar NOT NULL,
-	admission_year date NOT NULL,
+	admission_year int NOT NULL,
 	
 	bachelor int NOT NULL,
 	constraint fk_bachelor
