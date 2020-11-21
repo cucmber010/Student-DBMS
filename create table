@@ -61,7 +61,7 @@ create table Student (
 	l_name varchar (20) NOT NULL,
 	gender varchar (10) NOT NULL,
 	address varchar NOT NULL,
-	tel_num varchar (15) NOT NULL,
+	tel_num text NOT NULL,
 	email varchar NOT NULL,
 	admission_year int NOT NULL,
 	
