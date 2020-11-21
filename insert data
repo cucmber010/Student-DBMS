@@ -1,0 +1,124 @@
+insert into Professor (pro_id, pro_name, pro_gender, office) values 
+(1, 'Molli Durrance', 'Female', '201-PR'), (2, 'Nicolle Claisse', 'Male', '102-MA'), 
+(3, 'Creigh Wadge', 'Male', 'Sport Hall'), (4, 'Emma Tyler', 'Female', '202-PR'),
+(5, 'Elvira Muat', 'Female', '103-MA'), (6, 'Daniel Smith', 'Male', '104-MA'),
+(7, 'Cornelius Proudlock', 'Male', '100-PR'), (8, 'Ann Tatlow', 'Female', '210-LNG');
+
+
+insert into Disciplines (disc_id, disc_name, num_credits, professor) values
+(101, 'Calculus', 27,6), (102, 'C++', 27, 1), 
+(103, 'Academic English', 26, 8), (104, 'Physical Culture', 15, 3),
+(105, 'Discrete Maths', 26, 5), (106, 'History', 20, 7),
+(107, 'Java', 21, 4),(108, 'Algebra and Geometry', 26, 2);
+
+insert into Fee (Receipt_No, Total_Sum, Date_) values
+(18893, 850000, '05-January-2021'),
+(71462, 950000, '10-October-2020'),
+(14526, 1200000, '12-December-2020'),
+(82722, 800000, '28-January-2021'),
+(34616, 1000000,'01-September-2021'),
+(05955, 900000, '12-February-2021'),
+(15883, 1150000, '08-March-2021'),
+(07737, 1100000, '06-November-2020'),
+(99696, 850000, '12-April-2021'),
+(61461, 1200000 , '27-February-2021'),
+(50371, 1000000, '15-January-2020'),
+(19818, 800000, '25-December-2020'),
+(12422, 1150000, '01-March-2021'),
+(25707, 1200000, '01-April-2021');
+
+
+insert into Student (st_id, f_name, l_name, gender, address, tel_num, email, admission_year, bachelor, gpa, Scolarship, Fee) values 
+(1, 'Cyrille', 'Moorhead', 'Female', '14 Basil Place', '87785696325',  '100100@nifty.com', 2020, 502, 3.67, 24164, NULL),	
+(2, 'Garry', 'MacConnel', 'Male','70 Bay Alley', '87756324152', '100101@nifty.com', 2020, 506, 2.67, NULL, 18893),
+(3, 'Roman', 'Rennox', 'Male', '76 Bultman Hill', '87774563214',  '100102@nifty.com', 2020, 505, 2.33 ,NULL,  71462),
+(4, 'Cartio', 'Cuvley', 'Male', '29 Helena Center', '87012439687', '100103@nifty.com', 2020, 502, 4.00, 21546, NULL),
+(5, 'Layla', 'Northedge', 'Male', '208 Delladonna Pass', '87475693214','100104@nifty.com', 2020, 501, 3.00,  NULL, 14526),
+(6, 'Himawari', 'Uzumaki', 'Female', '1069 Tennyson Terrace', '87789740820', '100105@nifty.com', 2020, 501, 2.67,23238, NULL),
+(7, 'Kahlil', 'Attiwill', 'Male', '48 Hudson Parkway', '87002178898', '100106@nifty.com', 2020, 504, 3.33, NULL, 82722),
+(8, 'Heather', 'Courteney', 'Female', '398 Heffernan Way', '87753698748', '100107@nifty.com', 2020, 508, 3.00, 23922, NULL),
+(9, 'Kahaleel', 'Chimienti', 'Male', '5573 Bobwhite Place', '87012459874', '100108@nifty.com', 2020, 506, 4.00, NULL, 34616),
+(10, 'Rudd', 'Guesford', 'Male','116 Sommers Way', '87074789868','100109@nifty.com', 2020, 503, 3.33, NULL, 05955),
+(11, 'Ann', 'Carti', 'Female', '24 Ohio Drive', '87471236858', '100110@nifty.com', 2020, 503, 2.00, 25147, NULL),
+(12, 'Angelina', 'Broock', 'Female', '11 International Drive', '87788789696','100111@nifty.com', 2020, 507, 2.33, 25018, NULL),
+(13, 'Emily', 'Stone', 'Female', '44783 Southridge Place', '87014448778', '100112@nifty.com', 2020, 504, 1.00, 24061, NULL),
+(14, 'Mikasa',  'Ackermann', 'Female','9 Clove Way', '87001244242', '100113@nifty.com', 2020, 509, 3.00, NULL,  15883),
+(15, 'Noreen', 'Livings', 'Male', '795 Hoepker Parkway', '87752968748', '100114@nifty.com', 2020, 508, 3.33, 24212, NULL),
+(16, 'Andrey', 'Monelle', 'Male', '50 High Crossing Lane', '88005553535', '100115@nifty.com', 2020, 509, 4.00, NULL, 07737),
+(17, 'Misa', 'San', 'Female', '2 Dryden Terrace', '87785968789', '100116@nifty.com', 2020, 508, 4.00, 24769, NULL),
+(18, 'Rica', 'Lonsdale', 'Female', '6 Center Drive', '87772015487', '100117h@nifty.com', 2020, 507, 4.00, NULL, 99696),
+(19, 'Gareth', 'Laboune', 'Male', '83 Basil Crossing', '87005558968', '100118@nifty.com', 2020, 502, 3.67, 25506, NULL),
+(20, 'Wylma', 'Crighton', 'Female', '466 Packers Park', '87074251450', '100119@nifty.com', 2020, 501, 2.00, 23955, NULL),
+(21, 'Benni', 'Eatock', 'Male', '923 Brown Lane', '87010026353', '100120@nifty.com', 2020, 505, 25707, 2.33, NULL),
+(22, 'Joye', 'Kittow', 'Female', '23 1st Terrace', '87075558742', '100121@nifty.com', 2020, 503, 3.00, NULL, 61461),
+(23, 'Donella', 'Hayesman', 'Fmale', '76 Anderson Alley', '87017284315', '100122@nifty.com', 2020, 506, 3.67, NULL, 50371),
+(24, 'Wat', 'Vedenichev', 'Male', '37 Eliot Pass', '87478505050', '100123@nifty.com', 2020, 502, 2.00, 22451, NULL),
+(25, 'Catharine', 'Llywarch', 'Female', '164 Green Trail', '87759636336', '100124@nifty.com', 2020, 504, 1.00, 24689, NULL),
+(26, 'Clint', 'Newcomb', 'Male', '29 Tomscot Pass', '87784504545', '100125@nifty.com', 2020, 509, 2.67, NULL, 19818),
+(27, 'Adolphe', 'Skeermer', 'Male', '14 Becker Avenue', '87788889696', '100126@nifty.com', 2020, 501, 3.00, NULL, 12422),
+(28, 'Natal', 'Franciotti', 'Female', '30 Hollow Ridge Alley', '87056322552', '1001217@nifty.com', 2020, 507, 4.00, 25450, NULL),
+(29, 'Bevvy', 'Fryett', 'Male', '60 Surrey Terrace', '87052036060', '100128@nifty.com', 2020, 509, 3.33, 22460, NULL),
+(30, 'Donica', 'Malletratt', 'Female', '49 Sugar Place', '87051256595', '100129@nifty.com', 2020, 501, 3.33, NULL, 25707);
+
+
+insert into Bach_Programs (bach_id, bach_code, bach_name, main_disc_1, 
+				main_disc_2, main_disc_3, main_disc_4) 
+values 
+(501, '6B06201', 'Telecommunication System', 105, 102, 107, 103),
+(502, '6B06101', 'Computer Science', 105, 102, 103, 106),
+(503, '6B06102', 'Software Engineering', 101, 102, 103, 106),
+(504, '6B06103', 'Big Data Analysis', 108, 107, 103, 104),
+(505, '6B06301', 'Cybersecurity', 108, 107, 103, 106),
+(506, '6B03201', 'Digital Journalism', 101, 107, 106, 104),
+(507, '6B04101', 'IT Management', 108, 102, 103, 106),
+(508, '6B06104', 'Industrial Automatation', 105, 102, 103, 106),
+(509, '6B06105', 'Media Technologies', 108, 103, 104, 106);
+
+insert into Moodle_st (mdl_st_id, st_name, st_id, st_login, st_password, st_created_at) values 
+(21, 'Cyrille', 1, '100C', 'BzcLBF', '2020-08-26'), 
+(22, 'Garry', 2, '101G', '5FMtze', '2020-08-27'),
+(23, 'Roman', 3, '102R', 't4kZ8H', '2020-08-31'), 
+(24, 'Cartio', 4, '103C', 'XuUGBG', '2020-08-21'),
+(25, 'Layla', 5, '104L', 'V5Mr2K', '2020-08-19'),
+(26, 'Himawari', 6, '105H', 'IueZtg', '2020-09-01'),
+(27, 'Kahlil', 7, '106K', 'pb0lHj', '2020-08-28'),
+(28, 'Heather', 8, '107H', '3VS6tL', '2020-08-18'),
+(29, 'Kahaleel', 9, '108K', 'DTsaoC', '2020-08-21'),
+(30, 'Rudd', 10, '109R', 'nB9xgl', '2020-08-17'),
+(31, 'Ann', 11, '110A', 'eZKSmz', '2020-09-04'),
+(32, 'Angelina', 12, '111A', 'kHP40d', '2020-09-02'),
+(33, 'Emily', 13, '112E', '6g2UDI', '2020-08-22'), 
+(34, 'Mikasa', 14, '113M', 'LKV6BW', '2020-08-27'),
+(35, 'Noreen', 15, '114N', 'NOjAB2', '2020-08-27'), 
+(36, 'Andrey', 16, '115A', 'P1eYIJ', '2020-08-18'),
+(37, 'Misa', 17, '116M', 'D30AeA', '2020-08-24'), 
+(38, 'Rics', 18, '117R', 'BgpMfT', '2020-08-26'),
+(39, 'Gareth', 19, '118G', 'rPyN00b', '2020-08-16'), 
+(40, 'Wylma', 20, '119W', 'XwwlYq', '2020-09-01'),
+(41, 'Benni', 21, '120B', 'o0BYhfe', '2020-09-04'), 
+(42, 'Joye', 22, '121J', '80yEmS', '2020-08-23'),
+(43, 'Danella', 23, '122D', '5fvLmg', '2020-09-01'), 
+(44, 'Wat', 24, '123W', 'L9dHY0', '2020-09-01'),
+(45, 'Catharine', 25, '124C', 'B9k7SP', '2020-08-16'), 
+(46, 'Clint', 26, '125C', 'PB5wMY', '2020-08-16'),
+(47, 'Adolphe', 27, '126A', 'is9VFw', '2020-08-30'), 
+(48, 'Natal', 28, '127N', 'Gdzijy', '2020-08-28'),
+(49, 'Bevvy', 29, '128B', 'zxOQsr', '2020-08-29'), 
+(50, 'Donica', 30, '129D', 'FdvBcG', '2020-09-01');
+
+insert into Moodle_t (mdl_t_id, pro_name, pro_id, pro_login, pro_password, pro_created_at) values 
+(11, 'Molli', 1, '201M','klop063', '2017-08-31'), 
+(12, 'Nicolle', 2, '202N', 'YrJ658','2018-09-01'), 
+(13, 'Creigh', 3, '203C', 'opuPO8', '2015-09-01'), 
+(14, 'Emma', 4, '204E', 'pol087','2016-07-28'),
+(15, 'Elvira', 5, '205E', '8547er', '2015-08-31'), 
+(16, 'Daniel', 6, '206D', '5zer0f', '2014-09-02'),
+(17, 'Cornelius', 7, '207C', '554sff', '2016-08-30'), 
+(18, 'Ann', 8, '208A', 'aDfr84', '2016-09-01');
+
+insert into Advisor values 
+(1001, 'John Peter', 502), (1002, 'Larry Tomson', 509),
+(1003, 'Annie Thomas', 503), (1004, 'Kyle Ging', 501),
+(1005, 'Kendall Ren', 508), (1006, 'John McCall', 505),
+(1007, 'Luice Nancy', 506), (1008, 'Morgan Abraham', 504),
+(1009, 'Shaun Hussain', 507);
