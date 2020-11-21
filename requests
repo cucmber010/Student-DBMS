@@ -1,3 +1,15 @@
+
+select*from disciplines;
+select*from student;
+select*from professor;
+select*from bach_programs;
+select*from moodle_st;
+select*from moodle_t;
+select*from advisor;
+
+--I have made bunch of requests for administration
+--the queries can be changed depending on what exactly they need to find
+
 select st_id, f_name, adv_fullname, bach_id from student
 inner join bach_programs on bach_programs.bach_id=student.bachelor
 inner join advisor on bach_programs.bach_id=advisor.bachelor
@@ -10,8 +22,6 @@ inner join advisor on bach_programs.bach_id=advisor.bachelor
 where bach_code='6B06102'
 --find student's advisor and his bachelor id that belongs 6B06102
 
-select*from student
-select*from moodle_st
 select tel_num, address from student
 where f_name='Misa'
 --find telephone number and address of Heather
@@ -36,5 +46,3 @@ select l_name, receipt_no, total_sum, date_ from student
 left join fee on student.fee=fee.receipt_no
 --shows all the students who pay and don't pay fee
 
-select l_name, receipt_no, total_sum, date_ from student
-inner join fee on student.fee=fee.receipt_no 
