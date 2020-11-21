@@ -1,0 +1,40 @@
+select st_id, f_name, adv_fullname, bach_id from student
+inner join bach_programs on bach_programs.bach_id=student.bachelor
+inner join advisor on bach_programs.bach_id=advisor.bachelor
+where bach_name='Software Engineering'
+--find student's advisor and his bachelor id that belongs to Software Engineering
+
+select f_name, adv_fullname, bach_id from student
+inner join bach_programs on bach_programs.bach_id=student.bachelor
+inner join advisor on bach_programs.bach_id=advisor.bachelor
+where bach_code='6B06102'
+--find student's advisor and his bachelor id that belongs 6B06102
+
+select*from student
+select*from moodle_st
+select tel_num, address from student
+where f_name='Misa'
+--find telephone number and address of Heather
+
+select f_name,l_name, fee from student
+where fee is null group by f_name, l_name, fee
+--find student that doesn't pay fee
+
+select main_disc_1, main_disc_2, main_disc_3, main_disc_4
+from bach_programs where bach_id=509
+--find disciplines for bachelor programs under the number 509
+
+select office, pro_login, pro_password from professor
+inner join moodle_t on moodle_t.pro_id=professor.pro_id
+--find the office of professor to bring/give their logins and passwords
+
+select l_name, receipt_no, total_sum, date_ from student
+right join fee on student.fee=fee.receipt_no
+--find the students who has to pay fee
+
+select l_name, receipt_no, total_sum, date_ from student
+left join fee on student.fee=fee.receipt_no
+--shows all the students who pay and don't pay fee
+
+select l_name, receipt_no, total_sum, date_ from student
+inner join fee on student.fee=fee.receipt_no 
